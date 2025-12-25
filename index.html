@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 
-    <title>Grace Amid ruin - Hafsa Abbasi</title>
+    <title>Book Quest - Hafsa Abbasi</title>
     <style>
       * {
         cursor: none !important;
@@ -109,10 +109,8 @@
         margin: 0 auto;
         padding: 0;
       }
- 
 
-      
-       @font-face {
+      @font-face {
         font-family: 'TheScientist';
         src: url('TheScientist-L3EyW.ttf') format('truetype');
       }
@@ -167,43 +165,69 @@
 
       /* Project Images */
       .project-image-section {
-        margin-bottom: 80px;
-      }
+  margin-bottom: 80px;
+  padding: 40px;
+  background: rgba(255, 169, 88, 0.03);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 169, 88, 0.1);
+  box-shadow: 0 0 60px rgba(255, 169, 88, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-      .project-image {
-        width: 1500px;
-        height: auto;
-        border-radius: 30px;
-        margin-bottom: 40px;
-      }
+.project-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 169, 88, 0.2);
+  box-shadow: 0 0 30px rgba(255, 169, 88, 0.15);
+}
 
-      .image-caption {
-        font-size: 14px;
-        color: rgba(255, 169, 88, 0.7);
-        font-style: italic;
-        margin-bottom: 60px;
-      }
+.image-caption {
+  font-size: 14px;
+  color: rgba(255, 169, 88, 0.7);
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
 
       .section-title {
         font-family: 'TheScientist', cursive;
         font-size: 40px;
         color: rgba(255, 169, 88, 1);
-        margin-bottom: 40px;
-        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-top: 20px;
       }
 
-      .two-column-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        margin-bottom: 60px;
+            .two-column-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
       }
 
       .grid-image {
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
+        height: 600px;
+        width: auto;
+        border-radius: 10px;
+        flex-shrink: 0;
       }
+
+      a {
+
+        color: rgba(255, 169, 88, 0.7);
+
+      }
+
+      a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+      
       
       .scroll-progress {
   position: fixed;
@@ -249,6 +273,7 @@
 
   <body>
     
+    
     <div class="scroll-progress">
   <div class="progress-line"></div>
   <div class="progress-glow"></div>
@@ -264,19 +289,35 @@
       <div class="container project-content">
 
         <div class="project-header">
-          <h1 class="project-title">Grace Amid Ruin</h1>
-          <p class="project-meta">2024 • Acrylic paint • Painting</p>
+          <h1 class="project-title">Book Quest App</h1>
+          <p class="project-meta">2025 • App • Figma</p>
           <div class="project-description">
-            <p>This 8-foot-long painting depicts an angel symbolizing divine guidance, purity, and goodness. The figure contrasts sharply with the dark, desolate background filled with skulls, emphasizing the tension between light and darkness, hope and despair, and good and evil. The skeletons reaching toward the angel’s light suggest humanity’s instinctive search for divine intervention and relief from suffering. The angel’s stance, turned toward the darkness, conveys strength, protection, and quiet resilience. The work is intended to provoke reflection and invite individual interpretation, allowing its meaning to shift from viewer to viewer.</p>
+            <p>A multi-page informational website exploring the world of One Piece, created as a school assignment and personal passion project. This non-commercial, educational tribute combines academic web development requirements with genuine enthusiasm for Eiichiro Oda's manga series. The site takes users through a narrative journey—from the grand introduction on the homepage, through character-focused pages celebrating the Straw Hat crew and Luffy's transformation, to an exploration of Devil Fruits and the power systems that shape the world. As both a technical exercise and a fan tribute, the project allowed me to engage deeply with themes of freedom, friendship, and challenging unjust systems while practicing advanced layout techniques and creating a visually engaging, magazine-style reading experience.
+Technical & Design Features:</p>
+            
+            
+
+            <p>
+              
+
+              <a href="https://www.figma.com/proto/s1tQRAWg45ewEOCJUZXatf/Book-Quest?node-id=1-2&p=f&t=MZDLruyyYNpRW6eT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1">View prototype</a>
+            </p>
+
+           <p> <a href="https://www.figma.com/design/s1tQRAWg45ewEOCJUZXatf/Book-Quest?node-id=0-1&t=v7xt6gPgULHpBAYD-1">View Figma file</a>
+            
+            </p>
 
           </div>
         </div>
 
         <!-- Main Project Image -->
         <div class="project-image-section">
-          <img src="angelwings.png" alt="Project main image" class="project-image">
+          <video class="project-image" controls autoplay muted loop>
+            <source src="freecompress-book quest_compressed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="image-caption">Project video showcasing thewalk through of the App</p>
 
-          <p class="image-caption">Figurative work using contrast and symbolism to evoke reflection and interpretation</p>
         </div>
 
         <!-- Section with title -->
@@ -287,13 +328,41 @@
 
         <!-- Two column grid for process images -->
         <div class="two-column-grid">
-          <img src="angel process 1.png" alt="Process step 1" class="grid-image">
-          <img src="angel process 2.png" alt="Process step 2" class="grid-image">
-          <img src="angel process 3.png" alt="Process step 2" class="grid-image">
-          <img src="Angel process 4.png" alt="Process step 2" class="grid-image">
+          <img src="Login page.png" alt="Process step 1" class="grid-image">
+          <img src="Profile.png" alt="Process step 1" class="grid-image">
+          <img src="Quests.png" alt="Process step 1" class="grid-image">
+         <img src="Explore.png" alt="Process step 1" class="grid-image">
+                   <img src="Community.png" alt="Process step 1" class="grid-image">
+             <img src="Quest Complete!.png" alt="Process step 1" class="grid-image">
+            <img src="Review Page.png" alt="Process step 1" class="grid-image">
         </div>
 
       </div>
+    </div>
+    
+     <div class="page-wrapper">
+      <div class="container project-content">
+    <p>
+      <h2 class="section-title">Key Features</h2>
+<div class="project-description">
+<div class="project-description">
+  <ul style="list-style: none; padding-left: 0;">
+    <li style="margin-bottom: 20px;"><strong>1440px design framework</strong> with 1200px content container for balanced, centered layouts</li>
+    <li style="margin-bottom: 20px;"><strong>Scroll-triggered fade-in animations</strong> using JavaScript Intersection Observer API</li>
+    <li style="margin-bottom: 20px;"><strong>Absolute positioning</strong> for dynamic, manga-inspired magazine layouts with overlapping images and text</li>
+    <li style="margin-bottom: 20px;"><strong>CSS keyframe animations</strong> (floating logo, smooth transitions)</li>
+    <li style="margin-bottom: 20px;"><strong>Custom typography</strong> combining "Protest Revolution" headers with "Annie Use Your Telescope" body text</li>
+    <li style="margin-bottom: 20px;"><strong>Deep crimson and white color palette</strong> inspired by manga ink work and pirate aesthetics</li>
+    <li style="margin-bottom: 20px;"><strong>Multi-page navigation system</strong> connecting four distinct pages</li>
+    <li style="margin-bottom: 20px;"><strong>Responsive image positioning</strong> maintaining precise visual relationships</li>
+  </ul>
+</div>
+
+<div class="project-description">
+  <p style="font-size: 14px; color: rgba(255, 169, 88, 0.6); font-style: italic;"><strong>Copyright Note:</strong> One Piece © Eiichiro Oda/Shueisha. This is a non-commercial, educational fan project not intended for sale.</p>
+</div>
+</div>
+    </p>
     </div>
 
     <script>
@@ -397,7 +466,7 @@
       function createShootingStar() {
         const side = Math.random();
         let startX, startY, endX, endY;
-        
+
         if (side < 0.5) {
           startX = Math.random() * canvas.width * 0.3;
           startY = Math.random() * canvas.height * 0.3;
@@ -409,7 +478,7 @@
           endX = startX - 200 - Math.random() * 300;
           endY = startY + 200 + Math.random() * 300;
         }
-        
+
         shootingStars.push({
           x: startX,
           y: startY,
@@ -424,34 +493,34 @@
       function drawShootingStars() {
         shootingStars.forEach((star, index) => {
           star.progress += star.speed;
-          
+
           if (star.progress > 1) {
             star.opacity -= 0.05;
           }
-          
+
           if (star.opacity <= 0) {
             shootingStars.splice(index, 1);
             return;
           }
-          
+
           const currentX = star.x + (star.endX - star.x) * star.progress;
           const currentY = star.y + (star.endY - star.y) * star.progress;
-          
+
           const tailX = currentX - (star.endX - star.x) * 0.05;
           const tailY = currentY - (star.endY - star.y) * 0.05;
-          
+
           const gradient = ctx.createLinearGradient(tailX, tailY, currentX, currentY);
           gradient.addColorStop(0, `rgba(255, 255, 255, 0)`);
           gradient.addColorStop(0.5, `rgba(255, 255, 255, ${0.3 * star.opacity})`);
           gradient.addColorStop(1, `rgba(255, 255, 255, ${0.8 * star.opacity})`);
-          
+
           ctx.beginPath();
           ctx.moveTo(tailX, tailY);
           ctx.lineTo(currentX, currentY);
           ctx.strokeStyle = gradient;
           ctx.lineWidth = 2;
           ctx.stroke();
-          
+
           ctx.beginPath();
           ctx.arc(currentX, currentY, 2, 0, Math.PI * 2);
           ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
@@ -508,7 +577,8 @@
         }
       }, 8000);
     </script>
-<script>
+
+  <script>
   // Scroll progress indicator
   const progressLine = document.querySelector('.progress-line');
   const progressGlow = document.querySelector('.progress-glow');
@@ -535,5 +605,7 @@
   
   updateProgress();
 </script>
+  
+    </div>
   </body>
 </html>
