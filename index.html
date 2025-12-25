@@ -178,7 +178,7 @@
 
 .project-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 900px;
   height: auto;
   border-radius: 30px;
   margin-bottom: 20px;
@@ -268,6 +268,114 @@
   opacity: 0;
   transition: bottom 0.1s ease-out, opacity 0.3s ease-out;
 }
+      
+      /* Code Viewer */
+.code-viewer-section {
+  margin: 80px auto;
+  padding: 40px;
+  background: rgba(255, 169, 88, 0.03);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 169, 88, 0.1);
+  box-shadow: 0 0 60px rgba(255, 169, 88, 0.1);
+  max-width: 1100px;
+}
+
+.code-viewer-header {
+  margin-bottom: 30px;
+}
+
+.code-viewer-title {
+  font-size: 18px;
+  color: rgba(255, 169, 88, 0.9);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.code-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.code-tab {
+  padding: 12px 24px;
+  background: rgba(255, 169, 88, 0.05);
+  border: 1px solid rgba(255, 169, 88, 0.2);
+  border-radius: 10px;
+  color: rgba(255, 169, 88, 0.7);
+  font-size: 14px;
+  font-family: 'Ysabeau Infant', sans-serif;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.code-tab:hover {
+  background: rgba(255, 169, 88, 0.1);
+  border-color: rgba(255, 169, 88, 0.4);
+}
+
+.code-tab.active {
+  background: rgba(255, 169, 88, 0.15);
+  border-color: rgba(255, 169, 88, 0.6);
+  color: rgba(255, 169, 88, 1);
+  box-shadow: 0 0 20px rgba(255, 169, 88, 0.2);
+}
+
+.code-content {
+  position: relative;
+  background: #0a0a0a;
+  border-radius: 20px;
+  padding: 30px;
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 169, 88, 0.15);
+}
+
+.code-block {
+  display: none;
+}
+
+.code-block.active {
+  display: block;
+}
+
+.code-content pre {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #e0e0e0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.code-content::-webkit-scrollbar-track {
+  background: rgba(255, 169, 88, 0.05);
+  border-radius: 10px;
+}
+
+.code-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 169, 88, 0.3);
+  border-radius: 10px;
+}
+
+.code-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 169, 88, 0.5);
+}
+
+.code-label {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 11px;
+  color: rgba(255, 169, 88, 0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
     </style>
   </head>
 
@@ -289,37 +397,575 @@
       <div class="container project-content">
 
         <div class="project-header">
-          <h1 class="project-title">Book Quest App</h1>
-          <p class="project-meta">2025 • App • Figma</p>
+          <h1 class="project-title">One Piece Website</h1>
+          <p class="project-meta">2025 • Website • netnet: HTML/CSS/Java</p>
           <div class="project-description">
-            <p>A multi-page informational website exploring the world of One Piece, created as a school assignment and personal passion project. This non-commercial, educational tribute combines academic web development requirements with genuine enthusiasm for Eiichiro Oda's manga series. The site takes users through a narrative journey—from the grand introduction on the homepage, through character-focused pages celebrating the Straw Hat crew and Luffy's transformation, to an exploration of Devil Fruits and the power systems that shape the world. As both a technical exercise and a fan tribute, the project allowed me to engage deeply with themes of freedom, friendship, and challenging unjust systems while practicing advanced layout techniques and creating a visually engaging, magazine-style reading experience.
-Technical & Design Features:</p>
+            <p>A multi-page informational website exploring the world of One Piece, created as a school assignment and personal passion project. This non-commercial, educational tribute combines academic web development requirements with genuine enthusiasm for Eiichiro Oda's manga series. The site takes users through a narrative journey—from the grand introduction on the homepage, through character-focused pages celebrating the Straw Hat crew and Luffy's transformation, to an exploration of Devil Fruits and the power systems that shape the world. As both a technical exercise and a fan tribute, the project allowed me to engage deeply with themes of freedom, friendship, and challenging unjust systems while practicing advanced layout techniques and creating a visually engaging, magazine-style reading experience.</p>
             
             
 
             <p>
               
 
-              <a href="https://www.figma.com/proto/s1tQRAWg45ewEOCJUZXatf/Book-Quest?node-id=1-2&p=f&t=MZDLruyyYNpRW6eT-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1">View prototype</a>
+              <a href="https://hafsa5511.github.io/Final-Project/">Website Link</a>
             </p>
 
-           <p> <a href="https://www.figma.com/design/s1tQRAWg45ewEOCJUZXatf/Book-Quest?node-id=0-1&t=v7xt6gPgULHpBAYD-1">View Figma file</a>
+           <p> <a href="https://www.figma.com/design/N6Lih5ezgrPACoVfFZOwzq/Untitled?node-id=0-1&t=wkqEEqxjnoovVLXK-1">View Figma file</a>
             
             </p>
-
+ <p> <a href="https://www.figma.com/proto/N6Lih5ezgrPACoVfFZOwzq/Untitled?node-id=0-1&t=wkqEEqxjnoovVLXK-1">View Figma mockup</a>
+            
+            </p>
           </div>
         </div>
 
         <!-- Main Project Image -->
         <div class="project-image-section">
           <video class="project-image" controls autoplay muted loop>
-            <source src="freecompress-book quest_compressed.mp4" type="video/mp4">
+            <source src="compressedONEpiece.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <p class="image-caption">Project video showcasing thewalk through of the App</p>
+          <p class="image-caption">Project video showcasing the walk through of the website</p>
 
         </div>
+<!-- Code Viewer -->
+<div class="code-viewer-section">
+  <div class="code-viewer-header">
+    <h3 class="code-viewer-title">This website was created using netnet.studio with HTML, CSS, and JavaScript. Here's a peek at the actual lines that bring this website to life.</h3>
+    <div class="code-tabs">
+      <button class="code-tab active" data-tab="page1">Home Page</button>
+      <button class="code-tab" data-tab="page2">Crew Page</button>
+    </div>
+  </div>
+  
+  <div class="code-content">
+    <span class="code-label">HTML, CSS, JAVASCRIPT</span>
+    
+    <div class="code-block active" id="page1">
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-CA"&gt;
+  &lt;head&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet"&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet"&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet"&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        min-height: 5500px;
+      }
+      .page-wrapper {
+        width: 1440px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      .logo {
+        max-width: 180px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        animation: float 3s ease-in-out infinite;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        font-family: "Playpen Sans", cursive;
+        font-weight: 400;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+      .banner {
+        background-color: rgba(72, 0, 0, 1);
+        padding: 60px 0;
+        width: 100%;
+        position: relative;
+      }
+      .banner h1 {
+        color: white;
+        margin: 0 0 20px 0;
+        font-family: "Protest Revolution", sans-serif;
+      }
+      h2 {
+        color: rgba(72, 0, 0, 1);
+        font-family: "Protest Revolution", sans-serif;
+      }
+      .banner p {
+        color: white;
+        font-family: "Annie Use Your Telescope", cursive;
+        line-height: 60px;
+        font-size: 20px;
+      }
+      p {
+        font-family: "Annie Use Your Telescope", cursive;
+        font-size: 20px;
+      }
+      .boat-image { position: absolute; right: 120px; bottom: -250px; max-width: 400px; z-index: 10; }
+      .below-banner { margin-top: 230px; }
+      .sword-image { position: absolute; right: 120px; bottom: -920px; max-width: 1200px; z-index: 10; opacity: 15%; }
+      .roger-image { position: absolute; right: 120px; bottom: -1500px; max-width: 400px; z-index: 15; }
+      .roger-text { position: absolute; left: 0; bottom: -1480px; max-width: 600px; line-height: 40px; }
+      .summary-text { position: absolute; left: 0; bottom: -4500px; max-width: 600px; line-height: 40px; }
+      .map-image { position: absolute; right: 615px; bottom: -2300px; max-width: 530px; z-index: 15; }
+      .c1-image { position: absolute; right: 615px; bottom: -2940px; max-width: 530px; z-index: 15; }
+      .star-image { position: absolute; right: 300px; bottom: -2465px; max-width: 290px; z-index: 15; }
+      .poster-image { position: absolute; right: 300px; bottom: -2940px; max-width: 290px; z-index: 15; }
+      .ship-image { position: absolute; right: 300px; bottom: -3350px; max-width: 845px; z-index: 15; }
+      .joyboy-image {
+        position: absolute;
+        right: -600px;
+        bottom: 100px;
+        max-width: 900px;
+        z-index: 15;
+        animation: glow 3s ease-in-out infinite;
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3)); }
+        70% { filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.6)); }
+      }
+      .wave-banner { position: absolute; bottom: -5400px; left: 0; width: 100%; padding: 0; }
+      .wave-banner img { width: 100%; height: auto; display: block; }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="page-wrapper"&gt;
+      &lt;div&gt;
+        &lt;nav&gt;
+          &lt;a href="https://hafsa5511.github.io/crew/"&gt;THE CREW&lt;/a&gt;
+          &lt;a href="https://hafsa5511.github.io/luffy/"&gt;LUFFY&lt;/a&gt;
+          &lt;a href="https://hafsa5511.github.io/fruits/"&gt;DEVIL FRUITS&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+      &lt;div class="container header"&gt;
+        &lt;img src="skull.png" alt="One Piece Logo" class="logo"&gt;
+      &lt;/div&gt;
+      &lt;div class="banner"&gt;
+        &lt;div class="container"&gt;
+          &lt;h1&gt;One Piece&lt;/h1&gt;
+          &lt;p&gt;A story of freedom chased across an endless sea,&lt;br&gt;a tale of dreams carried by those brave enough to seek them.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="container below-banner"&gt;
+          &lt;p&gt;a world where the weight of history rests in the hearts of pirates.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="banner1.png" alt="Boat" class="boat-image"&gt;
+      &lt;/div&gt;
+      &lt;img src="roger.png" alt="king" class="roger-image"&gt;
+      &lt;img src="swords.png" alt="swords" class="sword-image"&gt;
+      &lt;div class="container" style="position: relative;"&gt;
+        &lt;div class="roger-text"&gt;
+          &lt;p&gt;Wealth, fame, power... Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer.&lt;/p&gt;
+          &lt;p&gt;"You want my treasure? You can have it! I left everything I gathered together in one place!"&lt;/p&gt;
+          &lt;p&gt;These words lured men to the Grand Line. This is the 'Great Pirate Era'!&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;img src="map.png" alt="map" class="map-image"&gt;
+      &lt;img src="c1.png" alt="character" class="c1-image"&gt;
+      &lt;img src="star.png" alt="star" class="star-image"&gt;
+      &lt;img src="poster.png" alt="poster" class="poster-image"&gt;
+      &lt;img src="ship.png" alt="ship" class="ship-image"&gt;
+      &lt;div class="container" style="position: relative;"&gt;
+        &lt;div class="summary-text"&gt;
+          &lt;h2&gt;Summary&lt;/h2&gt;
+          &lt;p&gt;One Piece follows Monkey D. Luffy and his crew as they sail across a vast world in search of the legendary treasure.&lt;/p&gt;
+          &lt;p&gt;The story explores deep political themes reflecting real global issues: corrupt governments, social inequality, and the abuse of power.&lt;/p&gt;
+          &lt;p&gt;At its core, One Piece is about finding courage to challenge unjust systems and pursue a world where everyone is free.&lt;/p&gt;
+          &lt;img src="joyboy.png" alt="joyboy" class="joyboy-image"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="wave-banner"&gt;
+        &lt;img src="water.png" alt="waves"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+      const fadeElements = document.querySelectorAll('.banner, .below-banner, .boat-image, .roger-image, .roger-text, .map-image, .c1-image, .star-image, .poster-image, .ship-image, .summary-text, .joyboy-image, .wave-banner');
+      const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      fadeElements.forEach(el =&gt; {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+        observer.observe(el);
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+    
+    <div class="code-block" id="page2">
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-CA"&gt;
+  &lt;head&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet"&gt;
+    &lt;title&gt;Crew&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        min-height: 500px;
+      }
+      .page-wrapper {
+        width: 1440px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .logo {
+        max-width: 180px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        animation: float 3s ease-in-out infinite;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+      .banner {
+        background-color: rgba(72, 0, 0, 1);
+        padding: 80px 0;
+        width: 100%;
+        position: relative;
+        overflow: visible;
+      }
+      .banner h1 {
+        color: white;
+        margin: 0 0 30px 0;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      h2 {
+        color: rgba(72, 0, 0, 1);
+        margin: 0 0 20px 0;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .banner p {
+        color: white;
+        font-family: "Annie Use Your Telescope", cursive;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 40px;
+        font-size: 20px;
+        max-width: 600px;
+      }
+      p {
+        font-family: "Annie Use Your Telescope", cursive;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px;
+      }
+      .Zorotext {
+        margin-top: 400px;
+        left: 0;
+        max-width: 600px;
+        line-height: 40px;
+      }
+      .Namitext {
+        margin-top: 980px;
+        float: right;
+        max-width: 600px;
+        line-height: 40px;
+      }
+      .banner-image {
+        position: absolute;
+        right: 120px;
+        bottom: -120px;
+        max-width: 342.3px;
+        z-index: 10;
+      }
+      .Zoro-image {
+        position: absolute;
+        right: 70px;
+        bottom: -460px;
+        max-width: 500px;
+      }
+      .ZC-image {
+        position: absolute;
+        left: 115px;
+        bottom: -455px;
+        max-width: 450px;
+      }
+      .Nami-image {
+        position: absolute;
+        left: 70px;
+        bottom: -1560px;
+        max-width: 380px;
+      }
+      .NC-image {
+        position: absolute;
+        right: 115px;
+        bottom: -1660px;
+        max-width: 540px;
+      }
+      .Usopptext {
+        position: absolute;
+        left: 115px;
+        bottom: -2300px;
+        max-width: 600px;
+        line-height: 40px;
+      }
+      .Usopp-image {
+        position: absolute;
+        right: 70px;
+        bottom: -2800px;
+        max-width: 400px;
+      }
+      .UC-image {
+        position: absolute;
+        left: 100px;
+        bottom: -2750px;
+        max-width: 390px;
+      }
+      .Sanjitext {
+        position: absolute;
+        right: 115px;
+        bottom: -3500px;
+        max-width: 600px;
+        line-height: 40px;
+      }
+      .Sanji-image {
+        position: absolute;
+        left: 70px;
+        bottom: -3970px;
+        max-width: 400px;
+      }
+      .SC-image {
+        position: absolute;
+        right: 290px;
+        bottom: -3970px;
+        max-width: 430px;
+      }
+      .Choppertext {
+        position: absolute;
+        left: 115px;
+        bottom: -4700px;
+        max-width: 600px;
+        line-height: 40px;
+      }
+      .Chopper-image {
+        position: absolute;
+        right: 70px;
+        bottom: -4950px;
+        max-width: 420px;
+      }
+      .CC-image {
+        position: absolute;
+        left: 110px;
+        bottom: -5170px;
+        max-width: 435px;
+      }
+      .Robintext {
+        position: absolute;
+        right: 115px;
+        bottom: -5900px;
+        max-width: 600px;
+        line-height: 40px;
+      }
+      .Robin-image {
+        position: absolute;
+        left: 70px;
+        bottom: -6330px;
+        max-width: 400px;
+      }
+      .RC-image {
+        position: absolute;
+        right: 300px;
+        bottom: -6300px;
+        max-width: 430px;
+      }
+      .up-banner {
+        position: absolute;
+        bottom: -7400px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+      }
+      .up-banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="page-wrapper"&gt;
+      &lt;div&gt;
+        &lt;nav&gt;
+          &lt;a href="https://hafsa5511.github.io/Final-Project/"&gt;HOME&lt;/a&gt;
+          &lt;a href="https://hafsa5511.github.io/luffy/"&gt;LUFFY&lt;/a&gt;
+          &lt;a href="https://hafsa5511.github.io/fruits/"&gt;DEVIL FRUITS&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+      &lt;div class="container header"&gt;
+        &lt;img src="skull.png" alt="One Piece Logo" class="logo"&gt;
+      &lt;/div&gt;
+      &lt;div class="banner"&gt;
+        &lt;div class="container"&gt;
+          &lt;h1&gt;The Straw hat crew - Original Crew&lt;/h1&gt;
+          &lt;p&gt;
+            Born from a captain's impossible dream, the Straw Hat Pirates began as scattered souls with fragile hopes.
+            Luffy gave each member the freedom to chase dreams they once thought unreachable. Together, they toppled tyrants, rewrote the fate of nations, and shook the world's foundations. A family bound not by blood, but by courage and destiny.&lt;/p&gt;
+          &lt;img src="BannerDecor.png" alt="Boat" class="banner-image"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="Zorotext"&gt;
+          &lt;h2&gt;
+            Rorona Zoro - Swordsman
+          &lt;/h2&gt;
+          &lt;p&gt;A relentless warrior whose loyalty never wavers. Zoro seeks to become the world's strongest swordsman, honoring a promise from his childhood and carving his strength into legend.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="Zoro.png" alt="zoro" class="Zoro-image"&gt;
+        &lt;img src="ZCollage.png" alt="zoro" class="ZC-image"&gt;
+        &lt;div class="Namitext"&gt;
+          &lt;h2&gt;
+            Nami - Navigator
+          &lt;/h2&gt;
+          &lt;p&gt;A brilliant strategist and master thief turned navigator, Nami can read the sea like no other. Her dream is to draw a complete map of the entire world, a record of every island she's ever touched.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="Nami.png" alt="Nami" class="Nami-image"&gt;
+        &lt;img src="NC.png" alt="nami" class="NC-image"&gt;
+        &lt;div class="Usopptext"&gt;
+          &lt;h2&gt;
+            Usopp - Sniper
+          &lt;/h2&gt;
+          &lt;p&gt;
+            A creative sharpshooter and born storyteller, Usopp hides deep courage beneath his fears. He dreams of becoming a brave warrior of the sea, worthy of the legends he used to invent.
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="Usopp.png" alt="usopp" class="Usopp-image"&gt;
+        &lt;img src="UC.png" alt="usopp collage" class="UC-image"&gt;
+        &lt;div class="Sanjitext"&gt;
+          &lt;h2&gt;
+            Sanji - Cook
+          &lt;/h2&gt;
+          &lt;p&gt;
+            A chivalrous fighter who cooks with precision and battles only with his legs, Sanji is driven by passion and pride. His dream is to find the All Blue, a mythical sea where fish from every ocean gather.
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="Sanji.png" alt="usopp" class="Sanji-image"&gt;
+        &lt;img src="SC.png" alt="Sanji collage" class="SC-image"&gt;
+        &lt;div class="Choppertext"&gt;
+          &lt;h2&gt;
+            Tony Tony Chopper - Doctor
+          &lt;/h2&gt;
+          &lt;p&gt;
+            A reindeer who became human through a Devil Fruit, Chopper is innocent, brilliant, and full of heart. His dream is to become a doctor who can cure any disease, someone truly capable of helping anyone in need.
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="Chopper.png" alt="chopper" class="Chopper-image"&gt;
+        &lt;img src="CC.png" alt="robin collage" class="CC-image"&gt;
+        &lt;div class="Robintext"&gt;
+          &lt;h2&gt;
+            Nico Robin - Archaeologist
+          &lt;/h2&gt;
+          &lt;p&gt;
+            Calm, intelligent, and deeply scarred by her past, Robin searches for truth in a world built on lies. Her dream is to uncover the Rio Poneglyph and learn the true history erased by the World Government.
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;img src="Robin.png" alt="Robin" class="Robin-image"&gt;
+        &lt;img src="RC.png" alt="robin collage" class="RC-image"&gt;
+      &lt;/div&gt;
+      &lt;div class="up-banner"&gt;
+        &lt;img src="up.png" alt="vivi"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+      const fadeElements = document.querySelectorAll('.banner, .banner-image, .Zorotext, .Zoro-image, .ZC-image, .Namitext, .Nami-image, .NC-image, .Usopptext, .Usopp-image, .UC-image, .Sanjitext, .Sanji-image, .SC-image, .Choppertext, .Chopper-image, .CC-image, .Robintext, .Robin-image, .RC-image, .up-banner');
+      const observer = new IntersectionObserver((entries) =&gt; {
+        entries.forEach(entry =&gt; {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+      fadeElements.forEach(el =&gt; {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+        observer.observe(el);
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 
+      </pre>
+    </div>
+  </div>
+</div>
         <!-- Section with title -->
         <h2 class="section-title">Process</h2>
         <div class="project-description">
@@ -328,10 +974,10 @@ Technical & Design Features:</p>
 
         <!-- Two column grid for process images -->
         <div class="two-column-grid">
-          <img src="Login page.png" alt="Process step 1" class="grid-image">
-          <img src="Profile.png" alt="Process step 1" class="grid-image">
-          <img src="Quests.png" alt="Process step 1" class="grid-image">
-         <img src="Explore.png" alt="Process step 1" class="grid-image">
+          <img src="Frame 5.png" alt="Process step 1" class="grid-image">
+          <img src="Frame 2.png" alt="Process step 1" class="grid-image">
+          <img src="Frame 3.png" alt="Process step 1" class="grid-image">
+         <img src="Frame 4.png" alt="Process step 1" class="grid-image">
                    <img src="Community.png" alt="Process step 1" class="grid-image">
              <img src="Quest Complete!.png" alt="Process step 1" class="grid-image">
             <img src="Review Page.png" alt="Process step 1" class="grid-image">
@@ -604,6 +1250,23 @@ Technical & Design Features:</p>
   window.addEventListener('resize', updateProgress);
   
   updateProgress();
+</script>
+    <script>
+  // Code tab switching
+  const codeTabs = document.querySelectorAll('.code-tab');
+  const codeBlocks = document.querySelectorAll('.code-block');
+  
+  codeTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.getAttribute('data-tab');
+      
+      codeTabs.forEach(t => t.classList.remove('active'));
+      codeBlocks.forEach(b => b.classList.remove('active'));
+      
+      tab.classList.add('active');
+      document.getElementById(targetTab).classList.add('active');
+    });
+  });
 </script>
   
     </div>
